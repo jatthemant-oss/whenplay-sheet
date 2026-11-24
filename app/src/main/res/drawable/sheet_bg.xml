@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Every bottom sheet in the app uses this: 28dp top corners, card colour. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="?attr/txCard" />
+    <corners android:topLeftRadius="28dp" android:topRightRadius="28dp" />
+</shape>

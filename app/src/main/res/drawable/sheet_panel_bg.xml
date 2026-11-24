@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The sheet itself: the rounded panel that slides over the hero. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="?attr/txSurface" />
+    <corners android:topLeftRadius="28dp" android:topRightRadius="28dp" />
+</shape>

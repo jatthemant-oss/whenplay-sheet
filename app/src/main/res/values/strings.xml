@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WhenPlay Premium</string>
+
+    <!-- Sheet (UI 8) copy -->
+    <string name="s_new_schedule">New schedule</string>
+    <string name="s_edit_schedule">Edit schedule</string>
+    <string name="s_pick_source">Where should the sound come from?</string>
+    <string name="s_starts">Starts</string>
+    <string name="s_stops">Stops</string>
+    <string name="s_repeats">Repeats</string>
+    <string name="s_delete_title">Delete this schedule?</string>
+    <string name="s_delete_body">It will not play again. The song files and links stay on your phone.</string>
+    <string name="s_delete_yes">Delete</string>
+    <string name="s_keep">Keep it</string>
+    <string name="s_clash_tag">Time overlap</string>
+    <string name="s_link_empty">Paste a link, or tap Browse to pick a file from your phone.</string>
+    <string name="s_link_wrong">This link will not play here. Copy it again from the app you want.</string>
+    <string name="s_link_ok">Link added</string>
+    <string name="s_phone_empty">Pick songs, or a whole playlist, from your phone.</string>
+</resources>

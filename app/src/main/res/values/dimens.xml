@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Reserved open space at the bottom of every screen for the ad banner. Change this one number to resize it
+         (100dp = large banner, 250dp = medium rectangle). -->
+    <dimen name="ad_slot_height">100dp</dimen>
+</resources>
+

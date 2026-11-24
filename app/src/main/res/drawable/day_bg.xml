@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sheet (UI 8) day square: soft rounded tile, no outline ring.
+     Off = faint tint, On = solid accent. Nothing is drawn in red. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="?attr/txAccent" />
+            <corners android:radius="11dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/sheet_tint_off" />
+            <corners android:radius="11dp" />
+        </shape>
+    </item>
+</selector>

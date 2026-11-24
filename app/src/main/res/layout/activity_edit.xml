@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+            <!-- HERO (Sheet / UI 8): the source window floods with the source colour -->
+            <FrameLayout
+                android:id="@+id/heroWrap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false">
+
+                <!-- big source mark, top-right, 16% like the design sheet -->
+                <ImageView
+                    android:id="@+id/heroMark"
+                    android:layout_width="210dp"
+                    android:layout_height="210dp"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="-34dp"
+                    android:layout_marginEnd="-38dp"
+                    android:alpha="0.16"
+                    android:contentDescription="Source"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_src_phone" />
+
+            <LinearLayout
+                android:id="@+id/headerBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hero_bg"
+                android:clipChildren="false"
+                android:gravity="bottom"
+                android:minHeight="214dp"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:paddingTop="28dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="44dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/screenTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:letterSpacing="0.2"
+                        android:text="CHOOSE A SOURCE"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/lensTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.12"
+                        android:maxLines="1"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/avatarRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="6dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/tilePhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:id="@+id/avPhone"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:contentDescription="Phone"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_src_phone" />
+
+                <TextView
+                    android:id="@+id/lblPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="1"
+                    android:text="Phone"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tileYt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:id="@+id/avYt"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:contentDescription="Yt"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_src_youtube" />
+
+                <TextView
+                    android:id="@+id/lblYt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="1"
+                    android:text="YouTube"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tileIg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:id="@+id/avIg"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:contentDescription="Ig"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_src_instagram" />
+
+                <TextView
+                    android:id="@+id/lblIg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="1"
+                    android:text="Instagram"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tileSp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:id="@+id/avSp"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:contentDescription="Sp"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_src_spotify" />
+
+                <TextView
+                    android:id="@+id/lblSp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="1"
+                    android:text="Spotify"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tileJio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:id="@+id/avJio"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:contentDescription="Jio"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_src_jiosaavn" />
+
+                <TextView
+                    android:id="@+id/lblJio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="1"
+                    android:text="JioSaavn"
+                    android:textSize="10sp" />
+            </LinearLayout>
+                </LinearLayout>
+
+                <!-- COPIED LINK banner: idle state, when the clipboard holds a supported link -->
+                <LinearLayout
+                    android:id="@+id/clipBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <View
+                        android:id="@+id/clipLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/clipLbl"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:letterSpacing="0.12"
+                            android:maxLines="1"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/clipUse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:layout_marginStart="8dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:paddingStart="11dp"
+                            android:paddingEnd="11dp"
+                            android:text="Use \u2192"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- SPOTLIGHT: shown once a source is picked (replaces the five tiles) -->
+                <LinearLayout
+                    android:id="@+id/spotBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/spotIcon"
+                            android:layout_width="46dp"
+                            android:layout_height="46dp"
+                            android:contentDescription="Source"
+                            android:padding="8dp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="11dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/spotTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/spotSub"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="1dp"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/spotAct"
+                            android:layout_width="wrap_content"
+                            android:layout_height="34dp"
+                            android:layout_marginStart="10dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:minWidth="64dp"
+                            android:paddingStart="13dp"
+                            android:paddingEnd="13dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/spotLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/spotDockLbl"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:letterSpacing="0.12"
+                            android:text="SWITCH SOURCE"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/miniRow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:id="@+id/slideHandle"
+                    android:layout_width="40dp"
+                    android:layout_height="4dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="14dp"
+                    android:alpha="0" />
+            </LinearLayout>
+            </FrameLayout>
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="-28dp"
+        android:layout_weight="1"
+        android:background="@drawable/sheet_panel_bg"
+        android:clipToOutline="true"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:clipChildren="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/formBox"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="24dp">
+
+                <!-- LINK (typed or pasted right here); slides up under the source window once a link is accepted -->
+                <LinearLayout
+                    android:id="@+id/linkGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/linkRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="8dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="Link"
+                        android:src="@drawable/ic_link" />
+
+                    <EditText
+                        android:id="@+id/linkInput"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="Paste link"
+                        android:imeOptions="actionDone"
+                        android:inputType="textUri|textNoSuggestions"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:cursorVisible="false"
+                        android:maxLines="1"
+                        android:padding="0dp"
+                        android:singleLine="true"
+                        android:textColor="?attr/txText"
+                        android:textColorHint="?attr/txMuted"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/btnPaste"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:text="Paste"
+                        android:textColor="?attr/txText"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/linkHint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:lineSpacingExtra="2dp"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/restBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:orientation="vertical">
+
+                <!-- NAME -->
+                <LinearLayout
+                    android:id="@+id/nameCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/nameRow"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp">
+
+                        <ImageView
+                            android:id="@+id/nameIcon"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:clickable="true"
+                            android:contentDescription="Edit name"
+                            android:focusable="true"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_edit" />
+
+                        <EditText
+                            android:id="@+id/nameInput"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="12dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:hint="Name"
+                            android:imeOptions="actionDone"
+                            android:inputType="textCapSentences"
+                            android:maxLength="40"
+                            android:maxLines="1"
+                            android:padding="0dp"
+                            android:singleLine="true"
+                            android:textColor="?attr/txText"
+                            android:textColorHint="?attr/txMuted"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/nameTag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:letterSpacing="0.14"
+                            android:text=""
+                            android:visibility="gone"
+                            android:textColor="?attr/txMuted"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/nameNote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Instagram doesn’t share reel titles, so add your own name if you like."
+                        android:textColor="?attr/txMuted"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <!-- LENGTH (all sources; Instagram: tap the number to edit) -->
+                <LinearLayout
+                    android:id="@+id/reelRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="4dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="4dp"
+                        android:paddingEnd="4dp">
+
+                        <TextView
+                            android:id="@+id/lenLabel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:letterSpacing="0.16"
+                            android:textColor="?attr/txMuted"
+                            android:textSize="11sp" />
+
+                        <EditText
+                            android:id="@+id/reelInput"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:digits="0123456789:"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center_vertical|end"
+                            android:hint="m:ss"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:padding="0dp"
+                            android:singleLine="true"
+                            android:textColor="?attr/txText"
+                            android:textColorHint="?attr/txMuted"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/lenLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp" />
+                </LinearLayout>
+
+                <!-- START / REPEAT / LOOP / STOP AT -->
+                <LinearLayout
+                    android:id="@+id/cellsBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/cellRowA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/timeCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/icStart"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:contentDescription="Start"
+                    android:padding="7dp"
+                    android:src="@drawable/ic_clock"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/lblStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start"
+                    android:textColor="?attr/txMuted"
+                    android:textSize="11sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/timeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:includeFontPadding="false"
+                        android:textColor="?attr/txText"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/ampmText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:includeFontPadding="false"
+                        android:textColor="?attr/txText"
+                        android:textSize="19sp" />
+                </LinearLayout>
+                            <TextView
+                    android:id="@+id/startSub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:textColor="?attr/txMuted"
+                    android:textSize="10sp" />
+
+                            <TextView
+                    android:id="@+id/chevStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:includeFontPadding="false"
+                    android:text="&#8250;"
+                    android:textColor="?attr/txMuted"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/cellLoop"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/icLoop"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:contentDescription="Loop"
+                    android:padding="7dp"
+                    android:src="@drawable/ic_loop"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/lblLoop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plays"
+                    android:textColor="?attr/txMuted"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/loopValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:includeFontPadding="false"
+                    android:textColor="?attr/txText"
+                    android:textSize="17sp" />
+                <com.google.android.material.materialswitch.MaterialSwitch
+                    android:id="@+id/switchLoop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stopRow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/icStop"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:contentDescription="Stop at"
+                    android:padding="7dp"
+                    android:src="@drawable/ic_stopsq"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/lblStop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stop at"
+                    android:textColor="?attr/txMuted"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/stopTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:includeFontPadding="false"
+                    android:textColor="?attr/txText"
+                    android:textSize="17sp" />
+                                <TextView
+                    android:id="@+id/stopSub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:textColor="?attr/txMuted"
+                    android:textSize="10sp" />
+
+                                <TextView
+                    android:id="@+id/chevStop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:includeFontPadding="false"
+                    android:text="&#8250;"
+                    android:textColor="?attr/txMuted"
+                    android:textSize="20sp" />
+                <com.google.android.material.materialswitch.MaterialSwitch
+                    android:id="@+id/switchStop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/cellRepeat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/icRepeat"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:contentDescription="Repeat"
+                    android:padding="7dp"
+                    android:src="@drawable/ic_repeat"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/lblRepeatC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Days"
+                    android:textColor="?attr/txMuted"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/repeatValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:includeFontPadding="false"
+                    android:textColor="?attr/txText"
+                    android:textSize="17sp" />
+            
+                <TextView
+                    android:id="@+id/daysSub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:textColor="?attr/txMuted"
+                    android:textSize="10sp" />
+
+            
+                <TextView
+                    android:id="@+id/chevRepeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:includeFontPadding="false"
+                    android:text="&#8250;"
+                    android:textColor="?attr/txMuted"
+                    android:textSize="20sp" />
+            </LinearLayout>                    </LinearLayout>
+
+
+                <!-- TIME EDITOR: opens here when the link and name boxes slide up -->
+                <include
+                    android:id="@+id/timePanel"
+                    layout="@layout/panel_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/cellRowB"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+                                </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- DAYS (opens when Repeat is tapped) -->
+                <LinearLayout
+                    android:id="@+id/daysCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/chipDays"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="7" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/durText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="6dp"
+                    android:textColor="?attr/txMuted"
+                    android:textSize="12sp" />
+
+                <!-- VOLUME -->
+                <LinearLayout
+                    android:id="@+id/volRow"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.14"
+                        android:text="VOL"
+                        android:textColor="?attr/txMuted"
+                        android:textSize="10sp" />
+
+                    <SeekBar
+                        android:id="@+id/volSeek"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_weight="1"
+                        android:progressTint="?attr/txAccent"
+                        android:thumbTint="?attr/txAccent" />
+
+                    <TextView
+                        android:id="@+id/volText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:minWidth="38dp"
+                        android:gravity="end"
+                        android:textColor="?attr/txText"
+                        android:textSize="15sp" />
+                </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/inlineMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:maxWidth="320dp"
+            android:visibility="gone" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Set"
+            android:textSize="15sp"
+            app:cornerRadius="26dp" />
+
+        <FrameLayout
+            android:id="@+id/adSlot"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ad_slot_height"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base palette (names kept so older code still resolves) -->
+    <color name="bg">#FFFFFF</color>
+    <color name="card">#F7F7F7</color>
+    <color name="stroke">#E8E8E8</color>
+    <color name="violet">#E61E4D</color>
+    <color name="cyan">#22D3EE</color>
+    <color name="text">#222222</color>
+    <color name="muted">#717171</color>
+    <color name="danger">#D92D45</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Sheet (UI 8): white page, #F7F7F7 card, #222 ink, #E61E4D accent -->
+    <color name="midnight_top">#FFFFFF</color>
+    <color name="midnight_mid">#FFFFFF</color>
+    <color name="midnight_bg">#FFFFFF</color>
+    <color name="midnight_surface">#FFFFFF</color>
+    <color name="midnight_card">#FFF7F7F7</color>
+    <color name="midnight_input">#FFF2F2F2</color>
+    <color name="midnight_stroke">#FFE8E8E8</color>
+    <color name="midnight_text">#222222</color>
+    <color name="midnight_muted">#717171</color>
+    <color name="midnight_acc">#E61E4D</color>
+    <color name="midnight_on">#FFFFFF</color>
+    <color name="midnight_acc2">#FF6B8A</color>
+    <color name="midnight_danger">#D92D45</color>
+    <color name="midnight_n1">#FFE9EC</color>
+    <color name="midnight_n2">#FFD9DE</color>
+    <color name="midnight_chip">#FFF2F2F2</color>
+
+    <!-- Sheet surfaces -->
+    <color name="sheet_hero_ink">#222222</color>
+    <color name="sheet_hair">#1A000000</color>
+    <color name="sheet_tint_off">#17000000</color>
+    <color name="sheet_clash_soft">#1FFF9500</color>
+    <color name="sheet_hero_grey_a">#E8E8EC</color>
+    <color name="sheet_hero_grey_b">#C9CAD3</color>
+</resources>

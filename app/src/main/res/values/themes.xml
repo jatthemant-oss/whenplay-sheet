@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.TuneX.Switch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="trackTint">@color/switch_track</item>
+        <item name="thumbTint">@color/switch_thumb</item>
+        <item name="trackDecorationTint">@color/switch_outline</item>
+    </style>
+
+    <style name="Base.TuneX.Dark" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="materialSwitchStyle">@style/Widget.TuneX.Switch</item>
+    </style>
+
+    <style name="Base.TuneX.Light" parent="Theme.Material3.Light.NoActionBar">
+        <item name="materialSwitchStyle">@style/Widget.TuneX.Switch</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="Theme.TuneX.Midnight" parent="Base.TuneX.Light">
+        <item name="txBg">@color/midnight_bg</item>
+        <item name="txBgMid">@color/midnight_mid</item>
+        <item name="txBgTop">@color/midnight_top</item>
+        <item name="txSurface">@color/midnight_surface</item>
+        <item name="txCard">@color/midnight_card</item>
+        <item name="txInput">@color/midnight_input</item>
+        <item name="txStroke">@color/midnight_stroke</item>
+        <item name="txText">@color/midnight_text</item>
+        <item name="txMuted">@color/midnight_muted</item>
+        <item name="txAccent">@color/midnight_acc</item>
+        <item name="txOnAccent">@color/midnight_on</item>
+        <item name="txAccent2">@color/midnight_acc2</item>
+        <item name="txDanger">@color/midnight_danger</item>
+        <item name="txNowStart">@color/midnight_n1</item>
+        <item name="txNowEnd">@color/midnight_n2</item>
+        <item name="txChip">@color/midnight_chip</item>
+        <item name="colorPrimary">@color/midnight_acc</item>
+        <item name="colorOnPrimary">@color/midnight_on</item>
+        <item name="colorSecondary">@color/midnight_acc2</item>
+        <item name="colorSecondaryContainer">@color/midnight_chip</item>
+        <item name="colorOnSecondaryContainer">@color/midnight_text</item>
+        <item name="colorSurface">@color/midnight_surface</item>
+        <item name="colorOnSurface">@color/midnight_text</item>
+        <item name="colorOnSurfaceVariant">@color/midnight_muted</item>
+        <item name="colorOutline">@color/midnight_stroke</item>
+        <item name="colorOutlineVariant">@color/midnight_stroke</item>
+        <item name="colorError">@color/midnight_danger</item>
+        <item name="android:colorBackground">@color/midnight_bg</item>
+        <item name="android:windowBackground">@drawable/bg_app</item>
+        <item name="android:statusBarColor">@color/midnight_top</item>
+        <item name="android:navigationBarColor">@color/midnight_bg</item>
+        <item name="android:textColorPrimary">@color/midnight_text</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarDividerColor">@color/midnight_stroke</item>
+    </style>
+    <style name="Theme.TuneX" parent="Theme.TuneX.Midnight" />
+
+    <style name="Theme.TuneX.Splash" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+</resources>
+

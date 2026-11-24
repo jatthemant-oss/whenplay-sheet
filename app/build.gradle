@@ -1,0 +1,59 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.tunex.app'
+    compileSdk 34
+
+    defaultConfig {
+        // New app id: this build installs BESIDE the old WhenPlay/TuneX app,
+        // so your old app and its schedules are never touched.
+        applicationId "com.whenplay.premium"
+        minSdk 26
+        targetSdk 28
+        versionCode Integer.parseInt(System.getenv("GITHUB_RUN_NUMBER") ?: "1") + 200
+        versionName "4.0.0-sheet"
+    }
+
+    signingConfigs {
+        // Used only when app/tunex.keystore is present (copy it from the old repo).
+        // Without it the build still works, but each run signs with a fresh key.
+        if (file('tunex.keystore').exists()) {
+            debug {
+                storeFile file('tunex.keystore')
+                storePassword 'tunex123'
+                keyAlias 'tunex'
+                keyPassword 'tunex123'
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            if (file('tunex.keystore').exists()) signingConfig signingConfigs.debug
+        }
+        release {
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.activity:activity-ktx:1.8.2'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+}

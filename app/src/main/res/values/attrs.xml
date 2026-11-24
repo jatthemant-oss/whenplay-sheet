@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="txBg" format="color" />
+    <attr name="txBgTop" format="color" />
+    <attr name="txCard" format="color" />
+    <attr name="txInput" format="color" />
+    <attr name="txStroke" format="color" />
+    <attr name="txText" format="color" />
+    <attr name="txMuted" format="color" />
+    <attr name="txAccent" format="color" />
+    <attr name="txOnAccent" format="color" />
+    <attr name="txAccent2" format="color" />
+    <attr name="txDanger" format="color" />
+    <attr name="txNowStart" format="color" />
+    <attr name="txNowEnd" format="color" />
+    <attr name="txChip" format="color" />
+    <attr name="txBgMid" format="color" />
+    <attr name="txSurface" format="color" />
+</resources>
+
